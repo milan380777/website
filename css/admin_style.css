@@ -1,0 +1,1307 @@
+/* Center-align the title */
+.contact .title {
+   text-align: center;
+   margin-bottom: 20px; /* Add some bottom margin for spacing */
+}
+
+/* Container for message boxes */
+.contact .box-container {
+   display: flex;
+   flex-wrap: wrap; /* Allow messages to wrap to the next row */
+   justify-content: space-around; /* Distribute space evenly between messages */
+   align-items: flex-start; /* Align messages to the top of the container */
+}
+
+/* Styling for individual message boxes */
+.contact .box {
+   width: calc(33.33% - 20px); /* Set each box to occupy 1/3 of the container width with some spacing */
+   margin: 0 10px 20px; /* Add some margin between message boxes */
+   min-height: 200px;
+   background: #060c21;
+   border-radius: 10px;
+   padding: 20px;
+   box-sizing: border-box; /* Include padding in the box's total width */
+   position: relative;
+}
+
+/* Styling for the box's shadow */
+.contact .box:before {
+   content: '';
+   position: absolute;
+   top: -2px;
+   left: -2px;
+   right: -2px;
+   bottom: -2px;
+   background: #fff;
+   z-index: -1;
+   border-radius: 10px;
+}
+
+/* Styling for the box's blur effect */
+.contact .box:after {
+   content: '';
+   position: absolute;
+   top: -2px;
+   left: -2px;
+   right: -2px;
+   bottom: -2px;
+   background: #fff;
+   z-index: -2;
+   filter: blur(40px);
+   border-radius: 10px;
+}
+
+/* Gradient background for message boxes */
+.contact .box:before,
+.contact .box:after {
+   background: linear-gradient(235deg, #89ff00, #060c21, #00bcd4);
+   border-radius: 10px;
+}
+
+/* Styling for paragraph elements within message boxes */
+.contact .box p {
+   margin-bottom: 10px;
+}
+
+/* Styling for bold text within message boxes */
+.contact .box p span {
+   font-weight: bold;
+}
+
+/* Styling for the delete button */
+.contact .delete-btn {
+   display: inline-block;
+   background-color: #f44336;
+   color: white;
+   padding: 8px 16px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   text-decoration: none;
+}
+
+/* Hover effect for the delete button */
+.contact .delete-btn:hover {
+   background-color: #c62828;
+}
+
+
+
+/* Styling for the container of 'add-expeditions' section */
+.expedition .add-expeditions {
+    position: relative;
+    width: 400px;
+    min-height: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #060c21; /* Background color for the section */
+}
+
+/* Pseudo-elements for creating gradient border effect */
+.expedition .add-expeditions:before,
+.expedition .add-expeditions:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -1;
+    background: linear-gradient(235deg, #89ff00, #060c21, #00bcd4);
+}
+
+/* Adding blur effect to the border */
+.expedition .add-expeditions:after {
+    filter: blur(40px);
+}
+
+/* Styling for the title within the 'add-expeditions' section */
+.expedition .add-expeditions .title {
+    text-align: center;
+    font-size: 50px;
+    color: #fff; /* Title text color */
+}
+
+/* Styling for the form within the 'add-expeditions' section */
+.expedition .add-expeditions form {
+    background-color: #060c21; /* Form background color */
+    border-radius: .5rem;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: var(--box-shadow); /* Applying box shadow */
+    border: var(--border); /* Applying border */
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+/* Styling for the heading within the form */
+.expedition .add-expeditions form h3 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--white); /* Heading text color */
+    margin-bottom: 1.5rem;
+}
+
+/* Styling for the message box within the form */
+.expedition .add-expeditions form .box {
+    width: 100%;
+    background-color: #060c21; /* Box background color */
+    border-radius: .5rem;
+    margin: 1rem 0;
+    padding: 1.2rem 1.4rem;
+    color: var(--white); /* Text color */
+    font-size: 1.8rem;
+    border: var(--border); /* Applying border */
+}
+
+/* Styling for the container of 'show-expeditions' section */
+.expedition .show-expeditions .box-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: flex-start;
+}
+
+/* Styling for individual message boxes within the 'show-expeditions' section */
+.expedition .show-expeditions .box-container .box {
+    position: relative;
+    width: 650px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    border-radius: .5rem;
+    border: var(--border); /* Applying border */
+    box-shadow: var(--box-shadow); /* Applying box shadow */
+    background-color: #060c21; /* Box background color */
+    color: #fff; /* Text color */
+}
+
+/* Pseudo-elements for creating gradient border effect on message boxes */
+.expedition .show-expeditions .box-container .box:before,
+.expedition .show-expeditions .box-container .box:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -1;
+    background: linear-gradient(235deg, #89ff00, #060c21, #00bcd4);
+}
+
+/* Adding blur effect to the border */
+.expedition .show-expeditions .box-container .box:after {
+    filter: blur(40px);
+}
+
+/* Styling for images within message boxes */
+.expedition .show-expeditions .box-container .box img {
+    height: 30rem;
+}
+
+/* Styling for the 'edit-expedition-form' section */
+.expedition .edit-expedition-form {
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, .7); /* Background color with opacity */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    overflow-y: scroll;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1200;
+    width: 100%;
+}
+
+/* Styling for the form within 'edit-expedition-form' section */
+.expedition .edit-expedition-form form {
+    width: 50rem;
+    padding: 2rem;
+    text-align: center;
+    border-radius: .5rem;
+    background-color: var(--white); /* Form background color */
+}
+
+/* Styling for images within the form */
+.expedition .edit-expedition-form form img {
+    height: 25rem;
+    margin-bottom: 1rem;
+}
+
+/* Styling for message boxes within the form */
+.expedition .edit-expedition-form form .box {
+    margin: 1rem 0;
+    padding: 1.2rem 1.4rem;
+    border: var(--border); /* Applying border */
+    border-radius: .5rem;
+    background-color: var(--light-bg); /* Box background color */
+    font-size: 1.8rem;
+    color: var(--black); /* Text color */
+    width: 100%;
+}
+
+/* Styling for edit and delete buttons */
+.expedition .edit-btn,
+.expedition .delete-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    color: var(--white); /* Text color */
+    font-size: 1.8rem;
+    border-radius: .5rem;
+    text-transform: capitalize;
+}
+
+/* Hover effect for edit and delete buttons */
+.expedition .edit-btn:hover,
+.expedition .delete-btn:hover {
+    background-color: var(--black); /* Hover background color */
+}
+
+/* Styling for delete button */
+.expedition .delete-btn {
+    background-color: var(--red); /* Button background color */
+}
+
+/* Hover effect for delete button */
+.expedition .delete-btn:hover {
+    background-color: var(--white); /* Hover background color */
+    color: var(--black); /* Hover text color */
+}
+
+/* Styling for option button */
+.expedition .option-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    color: var(--white); /* Text color */
+    font-size: 1.8rem;
+    border-radius: .5rem;
+    text-transform: capitalize;
+    background-color: var(--orange); /* Button background color */
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for option button */
+.expedition .option-btn:hover {
+    background-color: #f39c12; /* Hover background color */
+}
+
+
+/* Styling for the navbar */
+.header .navbar {
+    display: flex;
+    padding: 10px;
+}
+
+/* Styling for links within navbar and submenu */
+.header .navbar a, .header .submenu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0; /* Reset margin */
+}
+
+/* Styling for the Services link */
+.header .services {
+    position: relative;
+    margin-top: 10px; /* Adjust the value to move the Services link down */
+}
+
+/* Styling for the submenu */
+.header .submenu {
+    display: none;
+    position: absolute;
+    background-color: #060c21;
+    left: 0;
+    border-radius: 0 0 5px 5px;
+}
+
+/* Displaying the submenu on hover */
+.header .services:hover .submenu {
+    display: block;
+}
+
+/* Hover effect for links within the submenu */
+.header .submenu a:hover {
+    background-color: #273363;
+}
+
+/* Styling for the header */
+.header .header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: #060c21;
+    box-shadow: var(--box-shadow);
+}
+
+/* Styling for the flex container within header */
+.header .header .flex {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    justify-content: space-between;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Styling for the logo */
+.header .header .flex .logo {
+    font-size: 2.5rem;
+    color: var(--white);
+}
+
+/* Styling for a specific part of the logo */
+.header .header .flex .logo span {
+    color: var(--red);
+}
+
+/* Styling for links within the navbar */
+.header .header .flex .navbar a {
+    margin: 0 1rem;
+    font-size: 2rem;
+    color: var(--white);
+}
+
+/* Hover effect for links within the navbar */
+.header .header .flex .navbar a:hover {
+    color: var(--purple);
+}
+
+/* Styling for icons within the header */
+.header .header .flex .icons div {
+    margin-left: 1.5rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--white);
+}
+
+/* Hover effect for icons within the header */
+.header .header .flex .icons div:hover {
+    color: var(--purple);
+}
+
+/* Styling for the account box */
+.header .header .flex .account-box {
+    position: absolute;
+    top: 120%;
+    right: 2rem;
+    width: 35rem; /* Adjusted width */
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    padding: 2rem;
+    text-align: center;
+    border-radius: .5rem;
+    border: var(--border);
+    background-color: var(--white);
+    display: none;
+    animation: fadeIn .2s linear;
+    background: #060c21; /* Provided background color */
+}
+
+/* Pseudo-elements for creating gradient border effect */
+.header .header .flex .account-box:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -1;
+}
+
+.header .header .flex .account-box:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -2;
+    filter: blur(40px);
+}
+
+/* Applying gradient background to pseudo-elements */
+.header .header .flex .account-box:before,
+.header .header .flex .account-box:after {
+    background: linear-gradient(235deg, #89ff00, #060c21, #00bcd4);
+}
+
+/* Displaying the account box when active */
+.header .header .flex .account-box.active {
+    display: inline-block;
+}
+
+/* Styling for paragraphs within the account box */
+.header .header .flex .account-box p {
+    font-size: 2rem;
+    color: var(--white);
+    margin-bottom: 1.5rem;
+}
+
+/* Styling for a specific part of the paragraph */
+.header .header .flex .account-box p span {
+    color: var(--purple);
+}
+
+/* Styling for the delete button within the account box */
+.header .header .flex .account-box .delete-btn {
+    margin-top: 0;
+}
+
+/* Styling for div elements within the account box */
+.header .header .flex .account-box div {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    color: var(--light-color);
+}
+
+/* Styling for links within div elements in the account box */
+.header .header .flex .account-box div a {
+    color: var(--orange);
+}
+
+/* Hover effect for links within div elements in the account box */
+.header .header .flex .account-box div a:hover {
+    text-decoration: underline;
+}
+
+/* Styling for the menu button */
+.header #menu-btn {
+    display: none;
+}
+
+/* Styling for the message */
+.header .message {
+    position: sticky;
+    top: 0;
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: var(--light-bg);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10000;
+    gap: 1.5rem;
+}
+
+/* Styling for spans within the message */
+.header .message span {
+    font-size: 2rem;
+    color: var(--black);
+}
+
+/* Styling for icons within the message */
+.header .message i {
+    cursor: pointer;
+    color: var(--red);
+    font-size: 2.5rem;
+}
+
+/* Hover effect for icons within the message */
+.header .message i:hover {
+    transform: rotate(90deg);
+}
+
+
+
+/* Styling for the container of order boxes */
+.orders .box-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow boxes to wrap to the next line */
+    justify-content: space-between; /* Add space between boxes */
+}
+
+/* Styling for individual order boxes */
+.orders .box {
+    background-color: #060c21; /* Background color */
+    position: relative;
+    width: 48%; /* Set width to 48% to fit two boxes in a row */
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Pseudo-elements for creating gradient border effect */
+.orders .box:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -1;
+}
+
+.orders .box:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -2;
+    filter: blur(40px);
+}
+
+.orders .box:before,
+.orders .box:after {
+    background: linear-gradient(235deg, #89ff00, #060c21, #00bcd4);
+}
+
+/* Styling for the content within each box */
+.orders .content {
+    padding: 20px;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+/* Additional styles for the section containing orders */
+.orders .orders {
+    margin: 20px auto;
+    width: 80%;
+}
+
+/* Additional styles for the title */
+.orders .title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Additional styles for headings within the box */
+.orders .box p {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+/* Additional styles for spans within the box */
+.orders .box span {
+    font-weight: normal;
+}
+
+/* Additional styles for forms within the box */
+.orders .box form {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Additional styles for select elements */
+.orders .box select {
+    padding: 10px;
+    padding-right: 250px;
+    margin: 10px 0;
+}
+
+/* Styling for update and delete buttons */
+.orders .option-btn,
+.orders .delete-btn {
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.orders .option-btn {
+    background-color: #007bff;
+}
+
+.orders .option-btn:hover {
+    background-color: #0056b3;
+}
+
+.orders .delete-btn {
+    background-color: #dc3545;
+}
+
+.orders .delete-btn:hover {
+    background-color: #bb2d3b;
+}
+
+/* Aligning buttons to the right within forms */
+.orders .box form {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Adjusting margin for buttons */
+.orders .option-btn,
+.orders .delete-btn {
+    margin-left: 10px;
+}
+
+
+
+/* Styling for the dashboard section */
+.page .dashboard {
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+/* Styling for the title */
+.page .title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: white;
+  text-align: center;
+}
+
+/* Styling for the container of boxes */
+.page .box-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+/* Styling for individual boxes */
+.page .box {
+    position: relative;
+    width: 400px;
+    min-height: 175px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #060c21; /* Background color */
+}
+
+/* Pseudo-elements for creating gradient border effect */
+.page .box:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -1;
+}
+
+.page .box:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -2;
+    filter: blur(40px);
+}
+
+.page .box:before,
+.page .box:after {
+    background: linear-gradient(235deg,#89ff00,#060c21,#00bcd4);
+}
+
+/* Styling for the content within each box */
+.page .content {
+    padding: 20px;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+/* Styling for headings within the box */
+.page .box h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+/* Styling for paragraphs within the box */
+.page .box p {
+  font-size: 16px;
+  color: #fff;
+  margin-top: 30px; /* Add margin between h3 and p */
+  margin-left: 50px ; /* Adjusting left margin */
+}
+
+
+
+/* Styling for the section to add products */
+.prod .add-products {
+    position: relative; /* Use relative positioning to position it relative to its parent */
+    width: 400px;
+    min-height: 400px;
+    margin: auto; /* Center horizontally */
+    display: flex;
+    flex-direction: column; /* Display items vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    background: #060c21; /* Background color */
+}
+
+/* Pseudo-elements for creating gradient border effect */
+.prod .add-products:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -1;
+}
+
+.prod .add-products:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -2;
+    filter: blur(40px);
+}
+
+.prod .add-products:before,
+.prod .add-products:after {
+    background: linear-gradient(235deg, #89ff00, #060c21, #00bcd4);
+}
+
+/* Styling for the title within add-products section */
+.prod .add-products .title {
+   text-align: center;
+   font-size: 50px;
+   color: #fff; /* Text color */
+}
+
+/* Styling for the form within add-products section */
+.prod .add-products form {
+   background-color: #060c21; /* Background color */
+   border-radius: .5rem;
+   padding: 2rem;
+   text-align: center;
+   box-shadow: var(--box-shadow); /* Add shadow effect */
+   border: var(--border); /* Border style */
+   max-width: 50rem;
+   margin: 0 auto;
+}
+
+/* Styling for the heading within the form */
+.prod .add-products form h3 {
+   font-size: 2.5rem;
+   text-transform: uppercase;
+   color: var(--white); /* Text color */
+   margin-bottom: 1.5rem;
+}
+
+/* Styling for the individual box within the form */
+.prod .add-products form .box {
+   width: 100%;
+   background-color: #060c21; /* Background color */
+   border-radius: .5rem;
+   margin: 1rem 0;
+   padding: 1.2rem 1.4rem;
+   color: var(--white); /* Text color */
+   font-size: 1.8rem;
+   border: var(--border); /* Border style */
+}
+
+/* Styling for the container of product boxes */
+.prod .show-products .box-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four columns with equal width */
+    justify-content: center; /* Center the grid */
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: flex-start;
+}
+
+/* Styling for the individual product box */
+.prod .show-products .box-container .box {
+    position: relative;
+    width: 300px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column; /* Display items vertically */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    border-radius: .5rem;
+    border: var(--border); /* Border style */
+    box-shadow: var(--box-shadow); /* Add shadow effect */
+    background-color: #060c21; /* Background color */
+    color: #fff; /* Text color */
+}
+
+/* Pseudo-elements for creating gradient border effect */
+.prod .show-products .box-container .box:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -1;
+}
+
+.prod .show-products .box-container .box:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -2;
+    filter: blur(40px);
+}
+
+.prod .show-products .box-container .box:before,
+.prod .show-products .box-container .box:after {
+    background: linear-gradient(235deg, #89ff00, #060c21, #00bcd4);
+}
+
+/* Styling for the image within the product box */
+.prod .show-products .box-container .box img {
+    height: 30rem;
+}
+
+/* Styling for the product name within the box */
+.prod .show-products .box-container .box .name {
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: #fff; /* Text color */
+}
+
+/* Styling for the product price within the box */
+.prod .show-products .box-container .box .price {
+    padding: 1rem 0;
+    font-size: 2.5rem;
+    color: var(--red); /* Price color */
+}
+
+/* Styling for the edit product form */
+.prod .edit-product-form {
+   min-height: 100vh;
+   background-color: rgba(0, 0, 0, .7);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 2rem;
+   overflow-y: scroll;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 1200;
+   width: 100%;
+}
+
+/* Styling for the form within edit product form */
+.prod .edit-product-form form {
+   width: 50rem;
+   padding: 2rem;
+   text-align: center;
+   border-radius: .5rem;
+   background-color: var(--white); /* Background color */
+}
+
+/* Styling for the image within the form */
+.prod .edit-product-form form img {
+   height: 25rem;
+   margin-bottom: 1rem;
+}
+
+/* Styling for the individual box within the form */
+.prod .edit-product-form form .box {
+   margin: 1rem 0;
+   padding: 1.2rem 1.4rem;
+   border: var(--border); /* Border style */
+   border-radius: .5rem;
+   background-color: var(--light-bg); /* Background color */
+   font-size: 1.8rem;
+   color: var(--black); /* Text color */
+   width: 100%;
+}
+
+/* Styling for edit and delete buttons */
+.prod .edit-btn,
+.prod .delete-btn {
+   display: inline-block;
+   margin-top: 1rem;
+   padding: 1rem 3rem;
+   cursor: pointer;
+   color: var(--white); /* Text color */
+   font-size: 1.8rem;
+   border-radius: .5rem;
+   text-transform: capitalize;
+}
+
+/* Styling for hover effect on edit and delete buttons */
+.prod .edit-btn:hover,
+.prod .delete-btn:hover {
+   background-color: var(--black); /* Background color */
+}
+
+/* Styling for delete button */
+.prod .delete-btn {
+   background-color: var(--red); /* Background color */
+}
+
+/* Styling for hover effect on delete button */
+.prod .delete-btn:hover {
+   background-color: var(--white); /* Background color */
+   color: var(--black); /* Text color */
+}
+
+/* Styling for option button */
+.prod .option-btn {
+   display: inline-block;
+   margin-top: 1rem;
+   padding: 1rem 3rem;
+   cursor: pointer;
+   color: var(--white); /* Text color */
+   font-size: 1.8rem;
+   border-radius: .5rem;
+   text-transform: capitalize;
+   background-color: var(--orange); /* Background color */
+   border: none; /* Border style */
+   transition: background-color 0.3s ease; /* Transition effect */
+}
+
+/* Styling for hover effect on option button */
+.prod .option-btn:hover {
+   background-color: #f39c12; /* Background color on hover */
+}
+
+
+ /* Styling for the section to add packages */
+.package .add-packages {
+   position: relative; /* Position relative to its parent */
+   width: 400px; /* Set width */
+   min-height: 400px; /* Set minimum height */
+   margin: auto; /* Center horizontally */
+   display: flex; /* Display as flex container */
+   flex-direction: column; /* Stack items vertically */
+   justify-content: center; /* Center vertically */
+   align-items: center; /* Center horizontally */
+   background: #060c21; /* Background color */
+}
+
+/* Pseudo-elements for creating gradient border effect */
+.package .add-packages:before,
+.package .add-packages:after {
+   content: '';
+   position: absolute;
+   top: -2px;
+   left: -2px;
+   right: -2px;
+   bottom: -2px;
+   background: #fff; /* White background */
+   z-index: -1;
+   background: linear-gradient(235deg, #89ff00, #060c21, #00bcd4); /* Gradient background */
+}
+
+/* Apply blur effect to the after pseudo-element */
+.package .add-packages:after {
+   filter: blur(40px);
+}
+
+/* Styling for the title within add-packages section */
+.package .add-packages .title {
+   text-align: center; /* Center align text */
+   font-size: 50px; /* Set font size */
+   color: #fff; /* Text color */
+}
+
+/* Styling for the form within add-packages section */
+.package .add-packages form {
+   background-color: #060c21; /* Background color */
+   border-radius: .5rem; /* Border radius */
+   padding: 2rem; /* Padding */
+   text-align: center; /* Center align text */
+   box-shadow: var(--box-shadow); /* Add box shadow */
+   border: var(--border); /* Border style */
+   max-width: 50rem; /* Maximum width */
+   margin: 0 auto; /* Center horizontally */
+}
+
+/* Styling for the heading within the form */
+.package .add-packages form h3 {
+   font-size: 2.5rem; /* Set font size */
+   text-transform: uppercase; /* Convert text to uppercase */
+   color: var(--white); /* Text color */
+   margin-bottom: 1.5rem; /* Bottom margin */
+}
+
+/* Styling for the individual box within the form */
+.package .add-packages form .box {
+   width: 100%; /* Full width */
+   background-color: #060c21; /* Background color */
+   border-radius: .5rem; /* Border radius */
+   margin: 1rem 0; /* Margin */
+   padding: 1.2rem 1.4rem; /* Padding */
+   color: var(--white); /* Text color */
+   font-size: 1.8rem; /* Font size */
+   border: var(--border); /* Border style */
+}
+
+/* Styling for the container of package boxes */
+.package .show-packages .box-container {
+   display: grid; /* Display as grid */
+   grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+   justify-content: center; /* Center content */
+   gap: 1.5rem; /* Gap between grid items */
+   max-width: 1200px; /* Maximum width */
+   margin: 0 auto; /* Center horizontally */
+   align-items: flex-start; /* Align items to flex start */
+}
+
+/* Styling for the individual package box */
+.package .show-packages .box-container .box {
+   position: relative; /* Position relative */
+   width: 650px; /* Set width */
+   min-height: 400px; /* Set minimum height */
+   display: flex; /* Display as flex container */
+   flex-direction: column; /* Stack items vertically */
+   justify-content: center; /* Center content vertically */
+   align-items: center; /* Center content horizontally */
+   text-align: center; /* Center align text */
+   padding: 2rem; /* Padding */
+   border-radius: .5rem; /* Border radius */
+   border: var(--border); /* Border style */
+   box-shadow: var(--box-shadow); /* Add box shadow */
+   background-color: #060c21; /* Background color */
+   color: #fff; /* Text color */
+}
+
+/* Pseudo-elements for creating gradient border effect */
+.package .show-packages .box-container .box:before,
+.package .show-packages .box-container .box:after {
+   content: '';
+   position: absolute;
+   top: -2px;
+   left: -2px;
+   right: -2px;
+   bottom: -2px;
+   background: #fff; /* White background */
+   z-index: -1;
+   background: linear-gradient(235deg, #89ff00, #060c21, #00bcd4); /* Gradient background */
+}
+
+/* Apply blur effect to the after pseudo-element */
+.package .show-packages .box-container .box:after {
+   filter: blur(40px);
+}
+
+/* Styling for the image within the package box */
+.package .show-packages .box-container .box img {
+   height: 30rem; /* Set image height */
+}
+
+/* Styling for the package name within the box */
+.package .show-packages .box-container .box .name {
+   padding: 1rem 0; /* Padding */
+   font-size: 2rem; /* Font size */
+   color: #fff; /* Text color */
+}
+
+/* Styling for the package price within the box */
+.package .show-packages .box-container .box .price {
+   padding: 1rem 0; /* Padding */
+   font-size: 2.5rem; /* Font size */
+   color: var(--red); /* Price color */
+}
+
+/* Styling for the edit package form */
+.package .edit-package-form {
+   min-height: 100vh; /* Minimum height of viewport */
+   background-color: rgba(0, 0, 0, .7); /* Background color with opacity */
+   display: flex; /* Display as flex container */
+   align-items: center; /* Center content vertically */
+   justify-content: center; /* Center content horizontally */
+   padding: 2rem; /* Padding */
+   overflow-y: scroll; /* Enable vertical scrolling */
+   position: fixed; /* Fixed positioning */
+   top: 0; /* Position from top */
+   left: 0; /* Position from left */
+   z-index: 1200; /* Stack order */
+   width: 100%; /* Full width */
+}
+
+/* Styling for the form within edit package form */
+.package .edit-package-form form {
+   width: 50rem; /* Set width */
+   padding: 2rem; /* Padding */
+   text-align: center; /* Center align text */
+   border-radius: .5rem; /* Border radius */
+   background-color: var(--white); /* Background color */
+}
+
+/* Styling for the image within the edit package form */
+.package .edit-package-form form img {
+   height: 25rem; /* Set image height */
+   margin-bottom: 1rem; /* Bottom margin */
+}
+
+/* Styling for the individual box within the form */
+.package .edit-package-form form .box {
+   margin: 1rem 0; /* Margin */
+   padding: 1.2rem 1.4rem; /* Padding */
+   border: var(--border); /* Border style */
+   border-radius: .5rem; /* Border radius */
+   background-color: var(--light-bg); /* Background color */
+   font-size: 1.8rem; /* Font size */
+   color: var(--black); /* Text color */
+   width: 100%; /* Full width */
+}
+
+/* Styling for edit and delete buttons */
+.package .edit-btn,
+.package .delete-btn {
+   display: inline-block; /* Display as inline-block */
+   margin-top: 1rem; /* Top margin */
+   padding: 1rem 3rem; /* Padding */
+   cursor: pointer; /* Cursor style */
+   color: var(--white); /* Text color */
+   font-size: 1.8rem; /* Font size */
+   border-radius: .5rem; /* Border radius */
+   text-transform: capitalize; /* Convert text to capitalize */
+}
+
+/* Styling for hover effect on edit and delete buttons */
+.package .edit-btn:hover,
+.package .delete-btn:hover {
+   background-color: var(--black); /* Background color on hover */
+}
+
+/* Styling for delete button */
+.package .delete-btn {
+   background-color: var(--red); /* Background color */
+}
+
+/* Styling for hover effect on delete button */
+.package .delete-btn:hover {
+   background-color: var(--white); /* Background color on hover */
+   color: var(--black); /* Text color on hover */
+}
+
+/* Styling for option button */
+.package .option-btn {
+   display: inline-block; /* Display as inline-block */
+   margin-top: 1rem; /* Top margin */
+   padding: 1rem 3rem; /* Padding */
+   cursor: pointer; /* Cursor style */
+   color: var(--white); /* Text color */
+   font-size: 1.8rem; /* Font size */
+   border-radius: .5rem; /* Border radius */
+   text-transform: capitalize; /* Convert text to capitalize */
+   background-color: var(--orange); /* Background color */
+   border: none; /* Border style */
+   transition: background-color 0.3s ease; /* Transition effect */
+}
+
+/* Styling for hover effect on option button */
+.package .option-btn:hover {
+   background-color: #f39c12; /* Background color on hover */
+}
+
+
+
+/* Styling for the header section in admin panel */
+.user .admin-header {
+   display: flex; /* Display as flex container */
+   justify-content: center; /* Center content horizontally */
+   align-items: center; /* Center content vertically */
+   background-color: #333; /* Background color */
+   color: #fff; /* Text color */
+   padding: 10px; /* Padding */
+   text-align: center; /* Center align text */
+   width: 100%; /* Full width */
+}
+
+/* Styling for the title within user section */
+.user .title {
+   text-align: center; /* Center align text */
+   margin-bottom: 20px; /* Bottom margin */
+}
+
+/* Styling for the container of user boxes */
+.user .box-container {
+   display: grid; /* Display as grid */
+   grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+   gap: 20px; /* Gap between grid items */
+   padding: 20px; /* Padding */
+   position: relative; /* Position relative */
+}
+
+/* Pseudo-elements for creating gradient border effect */
+.user .box-container:before,
+.user .box-container:after {
+   content: ''; /* Empty content */
+   position: absolute; /* Position absolute */
+   top: -2px; /* Position from top */
+   left: -2px; /* Position from left */
+   right: -2px; /* Position from right */
+   bottom: -2px; /* Position from bottom */
+   background: linear-gradient(235deg, #89ff00, #060c21, #00bcd4); /* Gradient background */
+   z-index: -1; /* Set stack order */
+   filter: blur(40px); /* Apply blur effect */
+}
+
+/* Styling for the individual box within user section */
+.user .box {
+   background-color: #060c21; /* Background color */
+   border-radius: 5px; /* Border radius */
+   padding: 20px; /* Padding */
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+   color: #fff; /* Text color */
+}
+
+/* Styling for the delete button within user section */
+.user .delete-btn {
+   background-color: #ff0000; /* Background color */
+   color: #fff; /* Text color */
+   border: none; /* No border */
+   padding: 10px 20px; /* Padding */
+   border-radius: 5px; /* Border radius */
+   text-decoration: none; /* No text decoration */
+   cursor: pointer; /* Cursor style */
+}
+
+/* Styling for hover effect on delete button */
+.user .delete-btn:hover {
+   background-color: #cc0000; /* Background color on hover */
+}
